@@ -90,45 +90,46 @@ npm start
 ---
 
 ## Screenshots
+# Screenshots
 
-### Login Page
-![Login](./public/screenshots/Login.png)
+## Login Page
+![Login](public/screenshots/Login.png)
 
-### Dashboard
-![Dashboard](./screenshots/Dashboard.png)
+## Dashboard
+![Dashboard](public/screenshots/Dashboard.png)
 
-### Dashboard Dark Mode
-![Dashboard Dark Mode](./screenshots/DashboardDarkMode.png)
+## Dashboard Dark Mode
+![Dashboard Dark Mode](public/screenshots/DashboardDarkMode.png)
 
-### Jobs
-![Jobs](./screenshots/Jobs.png)
+## Jobs
+![Jobs](public/screenshots/Jobs.png)
 
-### Jobs Dark Mode
-![Jobs Dark Mode](./screenshots/JobsDarkMode.png)
+## Jobs Dark Mode
+![Jobs Dark Mode](public/screenshots/JobsDarkMode.png)
 
-### Candidates
-![Candidates](./screenshots/Candidates.png)
+## Candidates
+![Candidates](public/screenshots/Candidates.png)
 
-### Candidate Dark Mode
-![Candidate Dark Mode](./screenshots/CandidateDarkMode.png)
+## Candidate Dark Mode
+![Candidate Dark Mode](public/screenshots/CandidateDarkMode.png)
 
-### Add Job
-![Add Job](./screenshots/AddJob.png)
+## Add Job
+![Add Job](public/screenshots/AddJobs.png)
 
-### Add Job Dark Mode
-![Add Job Dark Mode](./screenshots/AddJobDarkMode.png)
+## Add Job Dark Mode
+![Add Job Dark Mode](public/screenshots/AddJobDarkMode.png)
 
-### Add Candidate
-![Add Candidate](./screenshots/AddCandidate.png)
+## Add Candidate
+![Add Candidate](public/screenshots/AddCandidates.png)
 
-### Add Candidate Dark Mode
-![Add Candidate Dark Mode](./screenshots/AddCandidateDarkMode.png)
+## Add Candidate Dark Mode
+![Add Candidate Dark Mode](public/screenshots/AddCandidateDarkMode.png)
 
 ---
 
 ## Live Demo
 
-https://ats-dashboard-uz8v.vercel.app/
+
 
 ---
 

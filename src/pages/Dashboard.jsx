@@ -39,9 +39,6 @@ const Dashboard = ({ darkMode, setDarkMode }) => {
                         <a href="/candidates" className="btn btn-light btn-sm">Candidates</a>
                     </div>
 
-                    <div className="position-absolute start-50 translate-middle-x text-white fw-semibold">
-                        Welcome Admin
-                    </div>
 
                     <div className="ms-auto d-flex gap-2 mt-3 mt-lg-0">
 

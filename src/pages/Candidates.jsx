@@ -126,11 +126,6 @@ const Candidates = ({ darkMode, setDarkMode }) => {
             </a>
           </div>
 
-          {/* Center Text */}
-          <div className="position-absolute start-50 translate-middle-x text-white fw-semibold">
-            Welcome Admin
-          </div>
-
           {/* Right Side */}
           <div className="ms-auto d-flex gap-2 mt-3 mt-lg-0">
 
