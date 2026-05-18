@@ -1,0 +1,122 @@
+
+/* =========================
+   BASE PAGE STYLES
+========================= */
+
+.candidates-page {
+  background-color: #f4f7fc;
+  min-height: 100vh;
+}
+
+.card {
+  border-radius: 15px;
+}
+
+.table th {
+  font-weight: 600;
+}
+
+.form-control,
+.form-select {
+  height: 45px;
+}
+
+.badge {
+  padding: 8px 12px;
+  font-size: 12px;
+}
+
+.page-link {
+  border-radius: 8px !important;
+  margin: 0 5px;
+}
+
+/* =========================
+   RESPONSIVE TABLE FIX
+========================= */
+
+@media (max-width: 768px) {
+  .table {
+    min-width: 700px;
+  }
+}
+
+/* =========================
+   DARK MODE (GLOBAL FIX)
+   IMPORTANT: OUTSIDE MEDIA QUERY
+========================= */
+
+.dark-mode {
+  background-color: #121212 !important;
+  min-height: 100vh;
+  color: #ffffff;
+}
+
+/* Containers */
+.dark-mode .container,
+.dark-mode .container-fluid {
+  background-color: transparent !important;
+}
+
+/* Cards */
+.dark-mode .card {
+  background-color: #1e1e1e !important;
+  color: #ffffff !important;
+  border: 1px solid #333;
+}
+
+.dark-mode .card-body {
+  background-color: #1e1e1e !important;
+  color: #ffffff !important;
+}
+
+/* Tables */
+.dark-mode table {
+  background-color: #1e1e1e !important;
+  color: #ffffff !important;
+}
+
+.dark-mode thead {
+  background-color: #2a2a2a !important;
+}
+
+.dark-mode tbody tr {
+  background-color: #1e1e1e !important;
+}
+
+/* Inputs & Select */
+.dark-mode input,
+.dark-mode select,
+.dark-mode .form-control,
+.dark-mode .form-select {
+  background-color: #2a2a2a !important;
+  color: #ffffff !important;
+  border: 1px solid #444 !important;
+}
+
+.dark-mode input::placeholder {
+  color: #bbb !important;
+}
+
+/* Navbar */
+.dark-mode .navbar {
+  background-color: #0d6efd !important;
+}
+
+/* Text */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6,
+.dark-mode p,
+.dark-mode td,
+.dark-mode th {
+  color: #ffffff !important;
+}
+
+/* Badges */
+.dark-mode .badge {
+  opacity: 0.95;
+}

@@ -1,0 +1,78 @@
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* remove unwanted scroll/space */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.login-container {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.login-container .row {
+  width: 100%;
+  height: 100%;
+  margin: 0 !important;
+}
+
+.banner-section {
+  background: linear-gradient(135deg, #0d6efd, #0056b3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 0;
+}
+
+.banner-content {
+  max-width: 400px;
+}
+
+.banner-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.banner-content p {
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.form-control {
+  height: 45px;
+}
+
+.btn-primary {
+  height: 45px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .banner-section {
+    display: none; /* hide left section on mobile */
+  }
+
+  .login-card {
+    margin: 20px;
+    padding: 25px;
+  }
+}

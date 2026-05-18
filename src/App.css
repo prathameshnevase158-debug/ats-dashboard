@@ -32,7 +32,99 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+/* ================= DARK MODE ================= */
+
+.dark-mode {
+  background-color: #121212;
+  color: white;
+  min-height: 100vh;
+}
+
+/* Cards */
+.dark-mode .card {
+  background-color: #1e1e1e !important;
+  color: white !important;
+  border: 1px solid #333;
+}
+
+/* Card Header */
+.dark-mode .card-header {
+  background-color: #2a2a2a !important;
+  color: white !important;
+  border-bottom: 1px solid #444;
+}
+
+/* Tables */
+.dark-mode .table {
+  color: white !important;
+}
+
+.dark-mode .table thead {
+  background-color: #2a2a2a !important;
+}
+
+.dark-mode .table tbody tr {
+  background-color: #1e1e1e !important;
+}
+
+.dark-mode .table-hover tbody tr:hover {
+  background-color: #333 !important;
+}
+
+/* Forms */
+.dark-mode .form-control,
+.dark-mode .form-select {
+  background-color: #2a2a2a !important;
+  color: white !important;
+  border: 1px solid #555;
+}
+
+.dark-mode .form-control::placeholder {
+  color: #bbb;
+}
+
+/* Interview Box */
+.dark-mode .interview-box {
+  background-color: #2a2a2a !important;
+  color: white !important;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* All Text */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6,
+.dark-mode p,
+.dark-mode span,
+.dark-mode small,
+.dark-mode label,
+.dark-mode td,
+.dark-mode th {
+  color: white !important;
+}
+
+/* Buttons */
+.dark-mode .btn-light {
+  background-color: #333 !important;
+  color: white !important;
+  border: 1px solid #555;
+}
+
+.dark-mode .btn-light:hover {
+  background-color: #444 !important;
+}
+
+/* Progress Bar Background */
+.dark-mode .progress {
+  background-color: #333 !important;
 }

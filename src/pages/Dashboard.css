@@ -1,0 +1,41 @@
+body {
+  background-color: #f4f7fc;
+}
+
+.summary-card {
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.summary-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-icon {
+  font-size: 45px;
+}
+
+.card {
+  border-radius: 15px;
+}
+
+.interview-box {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.progress {
+  height: 10px;
+  border-radius: 10px;
+}
+
+.table th {
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .card-icon {
+    font-size: 35px;
+  }
+}

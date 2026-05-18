@@ -1,0 +1,387 @@
+/* =========================
+   GLOBAL
+========================= */
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* =========================
+   PAGE
+========================= */
+
+.jobs-page {
+  min-height: 100vh;
+  width: 100%;
+  background: #f4f7fc;
+  transition: all 0.3s ease;
+}
+
+/* DARK MODE */
+.jobs-page.dark-mode {
+  background: #121212;
+  color: #ffffff;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  padding: 14px 30px;
+}
+
+.navbar-brand {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.dark-mode .navbar {
+  background: #0d47a1 !important;
+}
+
+.dark-mode .navbar .btn-light {
+  background: #1f1f1f;
+  border: 1px solid #444;
+  color: white;
+}
+
+.dark-mode .navbar .btn-light:hover {
+  background: #2d2d2d;
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container {
+  max-width: 100% !important;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.jobs-page h2 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.dark-mode h2 {
+  color: white;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+  border-radius: 10px;
+}
+
+.add-job-btn {
+  padding: 12px 22px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* =========================
+   SEARCH + FILTER
+========================= */
+
+.form-control,
+.form-select {
+  height: 50px;
+  border-radius: 12px;
+  border: 1px solid #dcdcdc;
+  padding-left: 15px;
+  font-size: 15px;
+}
+
+.dark-mode .form-control,
+.dark-mode .form-select {
+  background: #1f1f1f;
+  border: 1px solid #444;
+  color: white;
+}
+
+.dark-mode .form-control::placeholder {
+  color: #bbbbbb;
+}
+
+/* =========================
+   JOB CARD
+========================= */
+
+.job-card {
+  border-radius: 16px;
+  overflow: hidden;
+  transition: 0.3s;
+  border: none;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+}
+
+.dark-mode .job-card {
+  background: #1e1e1e;
+}
+
+.job-card .card-body {
+  padding: 24px;
+}
+
+.job-card h5 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.dark-mode .job-card h5,
+.dark-mode .job-card p,
+.dark-mode .job-card strong {
+  color: white;
+}
+
+.dark-mode .text-muted {
+  color: #bdbdbd !important;
+}
+
+/* =========================
+   BADGES
+========================= */
+
+.badge {
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* =========================
+   CARD BUTTONS
+========================= */
+
+.job-card .btn {
+  height: 44px;
+  font-weight: 600;
+}
+
+/* =========================
+   MODAL
+========================= */
+
+.modal-dialog {
+  max-width: 850px;
+}
+
+.modal-content {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* LIGHT MODE MODAL */
+.modal-header,
+.modal-body,
+.modal-footer {
+  background: white;
+}
+
+/* DARK MODE MODAL */
+.dark-mode .modal-content {
+  background: #1e1e1e;
+  color: white;
+}
+
+.dark-mode .modal-header,
+.dark-mode .modal-body,
+.dark-mode .modal-footer {
+  background: #1e1e1e;
+  color: white;
+}
+
+.dark-mode .modal-header {
+  border-bottom: 1px solid #333;
+}
+
+.dark-mode .modal-footer {
+  border-top: 1px solid #333;
+}
+
+/* =========================
+   MODAL CLOSE BUTTON
+========================= */
+
+.modal-header .btn-close {
+  opacity: 1 !important;
+  box-shadow: none !important;
+}
+
+/* LIGHT MODE */
+.modal-header .btn-close {
+  filter: none;
+}
+
+/* DARK MODE */
+.dark-mode .modal-header .btn-close {
+  filter: invert(1) brightness(300%);
+  opacity: 1 !important;
+}
+
+/* =========================
+   MODAL TITLE
+========================= */
+
+.modal-title {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* =========================
+   MODAL INPUTS
+========================= */
+
+.modal input,
+.modal select,
+.modal textarea {
+  height: 50px;
+  border-radius: 12px;
+  padding-left: 14px;
+  border: 1px solid #dcdcdc;
+}
+
+.modal textarea {
+  min-height: 120px;
+  padding-top: 12px;
+}
+
+.dark-mode .modal input,
+.dark-mode .modal select,
+.dark-mode .modal textarea {
+  background: #2a2a2a;
+  border: 1px solid #444;
+  color: white;
+}
+
+/* =========================
+   MODAL LABELS
+========================= */
+
+.modal label {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+/* =========================
+   MODAL BUTTONS
+========================= */
+
+.modal .btn {
+  min-width: 120px;
+  height: 45px;
+  font-weight: 600;
+}
+
+/* CANCEL BUTTON */
+
+.cancel-btn {
+  background: #6c757d !important;
+  color: white !important;
+  border: none;
+}
+
+.cancel-btn:hover {
+  background: #5c636a !important;
+}
+
+.dark-mode .cancel-btn {
+  background: #555 !important;
+  color: white !important;
+}
+
+.dark-mode .cancel-btn:hover {
+  background: #777 !important;
+}
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+.dark-mode .btn-secondary {
+  background: #2a2a2a;
+  border: none;
+}
+
+/* =========================
+   EMPTY MESSAGE
+========================= */
+
+.dark-mode .text-muted {
+  color: #bcbcbc !important;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+
+  .navbar-brand {
+    font-size: 22px;
+  }
+
+  .jobs-page h2 {
+    font-size: 32px;
+  }
+
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .job-card h5 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 15px;
+  }
+
+  .jobs-page h2 {
+    font-size: 28px;
+  }
+
+  .modal-dialog {
+    margin: 10px;
+  }
+
+  .modal-content {
+    border-radius: 14px;
+  }
+
+  .job-card .card-body {
+    padding: 18px;
+  }
+
+  .add-job-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
