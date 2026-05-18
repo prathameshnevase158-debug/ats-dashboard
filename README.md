@@ -128,7 +128,7 @@ npm start
 
 ## Live Demo
 
-https://ats-dashboard-jade.vercel.app
+https://ats-dashboard-uz8v.vercel.app/
 
 ---
 
