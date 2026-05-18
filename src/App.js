@@ -19,7 +19,7 @@ function App() {
     <Router>
       <Routes>
 
-        {/* Login - No Dark Mode */}
+        {/* Login */}
         <Route
           path="/"
           element={<Login />}

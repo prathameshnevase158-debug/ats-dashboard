@@ -18,7 +18,7 @@ const JobModal = ({
 
   const [errors, setErrors] = useState({});
 
-  // Load Selected Job
+  // Selected Job
   useEffect(() => {
     if (selectedJob) {
       setJobData(selectedJob);

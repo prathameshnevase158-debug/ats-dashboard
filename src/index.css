@@ -4,7 +4,7 @@ body.dark-mode {
   color: #e5e7eb !important;
 }
 
-/* VERY IMPORTANT: catch ALL elements */
+/*  catch ALL elements */
 body.dark-mode * {
   background-color: transparent;
 }
@@ -38,7 +38,7 @@ body.dark-mode select {
   border: 1px solid #334155 !important;
 }
 
-/* Fix white sections specifically */
+/* Fix white sections */
 body.dark-mode [class*="bg-white"],
 body.dark-mode [style*="background: white"],
 body.dark-mode [style*="background-color: white"] {

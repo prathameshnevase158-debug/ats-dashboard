@@ -88,7 +88,7 @@ const Candidates = ({ darkMode, setDarkMode }) => {
     setShowModal(false);
   };
 
-  // ✅ LOGOUT FUNCTION FIX
+  // LOGOUT FUNCTION FIX
   const handleLogout = () => {
     localStorage.removeItem("token"); // optional
     alert("Logged Out Successfully");

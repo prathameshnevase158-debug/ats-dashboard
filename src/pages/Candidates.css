@@ -1,7 +1,5 @@
 
-/* =========================
-   BASE PAGE STYLES
-========================= */
+/* BASE PAGE STYLES */
 
 .candidates-page {
   background-color: #f4f7fc;
@@ -31,9 +29,7 @@
   margin: 0 5px;
 }
 
-/* =========================
-   RESPONSIVE TABLE FIX
-========================= */
+/* RESPONSIVE TABLE FIX */
 
 @media (max-width: 768px) {
   .table {
@@ -41,10 +37,8 @@
   }
 }
 
-/* =========================
-   DARK MODE (GLOBAL FIX)
-   IMPORTANT: OUTSIDE MEDIA QUERY
-========================= */
+/* DARK MODE 
+   IMPORTANT: OUTSIDE MEDIA QUERY */
 
 .dark-mode {
   background-color: #121212 !important;

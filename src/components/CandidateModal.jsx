@@ -81,7 +81,7 @@ const CandidateModal = ({
 
         <div className="modal-content border-0 rounded-4">
 
-          {/* Header */}
+          {/*  Header */}
           <div className="modal-header">
 
             <h5 className="modal-title">
@@ -103,8 +103,9 @@ const CandidateModal = ({
             ></button>
 
           </div>
+          
 
-          {/* Body */}
+          /* Body */
           <div className="modal-body">
 
             <div className="row g-3">
