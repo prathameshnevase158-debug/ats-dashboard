@@ -7,7 +7,7 @@ const users = [
   {
     id: 2,
     email: "hr@gmail.com",
-    password: "hr12345",
+    password: "hr1234",
   },
 ];
 

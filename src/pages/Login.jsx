@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 import users from "../data/users";
 import "./Login.css";
 
@@ -13,6 +14,9 @@ const Login = ({ darkMode, setDarkMode }) => {
   });
 
   const [errors, setErrors] = useState({});
+
+  // password visibility
+  const [showPassword, setShowPassword] = useState(false);
 
   // input change
   const handleChange = (e) => {
@@ -62,7 +66,6 @@ const Login = ({ darkMode, setDarkMode }) => {
 
   return (
     <div className="container-fluid login-container">
-
       <div className="row min-vh-100 g-0">
 
         {/* LEFT SIDE */}
@@ -75,7 +78,6 @@ const Login = ({ darkMode, setDarkMode }) => {
 
         {/* RIGHT SIDE */}
         <div className="col-lg-6 col-12 d-flex align-items-center justify-content-center px-0">
-
           <div className="login-card shadow">
 
             <h2 className="text-center mb-4">Login</h2>
@@ -85,6 +87,7 @@ const Login = ({ darkMode, setDarkMode }) => {
               {/* EMAIL */}
               <div className="mb-3">
                 <label>Email</label>
+
                 <input
                   type="email"
                   name="email"
@@ -92,23 +95,53 @@ const Login = ({ darkMode, setDarkMode }) => {
                   value={formData.email}
                   onChange={handleChange}
                 />
+
                 {errors.email && (
-                  <small className="text-danger">{errors.email}</small>
+                  <small className="text-danger">
+                    {errors.email}
+                  </small>
                 )}
               </div>
 
               {/* PASSWORD */}
               <div className="mb-3">
                 <label>Password</label>
-                <input
-                  type="password"
-                  name="password"
-                  className="form-control"
-                  value={formData.password}
-                  onChange={handleChange}
-                />
+
+                <div className="position-relative">
+
+                  <input
+                    type={showPassword ? "text" : "password"}
+                    name="password"
+                    className="form-control pe-5"
+                    value={formData.password}
+                    onChange={handleChange}
+                  />
+
+                  <span
+                    onClick={() =>
+                      setShowPassword(!showPassword)
+                    }
+                    style={{
+                      position: "absolute",
+                      top: "50%",
+                      right: "15px",
+                      transform: "translateY(-50%)",
+                      cursor: "pointer",
+                      color: "#666",
+                    }}
+                  >
+                    {showPassword ? (
+                      <FaEyeSlash />
+                    ) : (
+                      <FaEye />
+                    )}
+                  </span>
+                </div>
+
                 {errors.password && (
-                  <small className="text-danger">{errors.password}</small>
+                  <small className="text-danger">
+                    {errors.password}
+                  </small>
                 )}
               </div>
 
@@ -118,9 +151,7 @@ const Login = ({ darkMode, setDarkMode }) => {
               </button>
 
             </form>
-
           </div>
-
         </div>
       </div>
     </div>
