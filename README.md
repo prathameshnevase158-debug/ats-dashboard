@@ -7,14 +7,13 @@ This project helps manage jobs, candidates, and recruitment workflow with a clea
 
 ## Features
 
-- User Authentication
+- User login
 - Dashboard Management
 - Candidate Management
 - Job Listings
 - Search & Filter Functionality
 - Dark Mode Support
 - Responsive Design
-- Add / Edit Candidate Modal
 
 ---
 
@@ -65,7 +64,7 @@ This project helps manage jobs, candidates, and recruitment workflow with a clea
 
 ## Installation & Setup
 
-### i) Clone the Repository
+### i Clone the Repository
 
 ```bash
 git clone https://github.com/prathameshnevase158-debug/ats-dashboard.git
@@ -74,7 +73,7 @@ cd ats-dashboard
 
 ---
 
-### ii) Install Dependencies
+### ii Install Dependencies
 
 ```bash
 npm install
@@ -82,7 +81,7 @@ npm install
 
 ---
 
-### iii) Run the Project
+### iii Run the Project
 
 ```bash
 npm start
