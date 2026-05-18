@@ -9,7 +9,6 @@ import "./Candidates.css";
 import { FaEye, FaEdit } from "react-icons/fa";
 
 const Candidates = ({ darkMode, setDarkMode }) => {
-
   const navigate = useNavigate();
 
   const [candidates, setCandidates] = useState(candidatesData);
@@ -18,8 +17,8 @@ const Candidates = ({ darkMode, setDarkMode }) => {
   const [showModal, setShowModal] = useState(false);
   const [modalMode, setModalMode] = useState("add");
   const [selectedCandidate, setSelectedCandidate] = useState(null);
-  const [currentPage, setCurrentPage] = useState(1);
 
+  const currentPage = 1;
   const candidatesPerPage = 5;
 
   const filteredCandidates = candidates.filter((candidate) => {
@@ -41,10 +40,6 @@ const Candidates = ({ darkMode, setDarkMode }) => {
   const currentCandidates = filteredCandidates.slice(
     indexOfFirst,
     indexOfLast
-  );
-
-  const totalPages = Math.ceil(
-    filteredCandidates.length / candidatesPerPage
   );
 
   const handleAdd = () => {
@@ -75,6 +70,7 @@ const Candidates = ({ darkMode, setDarkMode }) => {
         ...candidateData,
         id: candidates.length + 1,
       };
+
       setCandidates([...candidates, newCandidate]);
     } else if (modalMode === "edit") {
       const updated = candidates.map((c) =>
@@ -82,25 +78,25 @@ const Candidates = ({ darkMode, setDarkMode }) => {
           ? { ...c, ...candidateData }
           : c
       );
+
       setCandidates(updated);
     }
 
     setShowModal(false);
   };
 
-  // LOGOUT FUNCTION FIX
   const handleLogout = () => {
-    localStorage.removeItem("token"); // optional
+    localStorage.removeItem("token");
     alert("Logged Out Successfully");
     navigate("/");
   };
 
   return (
     <div className={`candidates-page ${darkMode ? "dark-mode" : ""}`}>
-
+      
       {/* Navbar */}
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary px-4 position-relative">
-
+        
         <a className="navbar-brand fw-bold" href="/dashboard">
           ATS Dashboard
         </a>
@@ -117,17 +113,25 @@ const Candidates = ({ darkMode, setDarkMode }) => {
         <div className="collapse navbar-collapse" id="navbarContent">
 
           <div className="d-flex flex-column flex-lg-row gap-2 ms-lg-4 mt-3 mt-lg-0">
-            <a href="/dashboard" className="btn btn-light btn-sm">Dashboard</a>
-            <a href="/jobs" className="btn btn-light btn-sm">Jobs</a>
-            <a href="/candidates" className="btn btn-light btn-sm">Candidates</a>
+            <a href="/dashboard" className="btn btn-light btn-sm">
+              Dashboard
+            </a>
+
+            <a href="/jobs" className="btn btn-light btn-sm">
+              Jobs
+            </a>
+
+            <a href="/candidates" className="btn btn-light btn-sm">
+              Candidates
+            </a>
           </div>
 
-          {/* CENTER TEXT */}
+          {/* Center Text */}
           <div className="position-absolute start-50 translate-middle-x text-white fw-semibold">
             Welcome Admin
           </div>
 
-          {/* RIGHT SIDE */}
+          {/* Right Side */}
           <div className="ms-auto d-flex gap-2 mt-3 mt-lg-0">
 
             {/* Dark Mode */}
@@ -151,7 +155,7 @@ const Candidates = ({ darkMode, setDarkMode }) => {
         </div>
       </nav>
 
-      {/* MAIN */}
+      {/* Main Content */}
       <div className="container py-4">
 
         <BackButton />
@@ -164,7 +168,7 @@ const Candidates = ({ darkMode, setDarkMode }) => {
           </button>
         </div>
 
-        {/* SEARCH + FILTER */}
+        {/* Search & Filter */}
         <div className="row g-3 mb-4">
 
           <div className="col-lg-8">
@@ -192,11 +196,16 @@ const Candidates = ({ darkMode, setDarkMode }) => {
 
         </div>
 
-        {/* TABLE */}
+        {/* Table */}
         <div className="card border-0 shadow-sm">
+
           <div className="card-body table-responsive">
 
-            <table className={`table table-hover align-middle ${darkMode ? "table-dark" : ""}`}>
+            <table
+              className={`table table-hover align-middle ${
+                darkMode ? "table-dark" : ""
+              }`}
+            >
 
               <thead>
                 <tr>
@@ -226,8 +235,8 @@ const Candidates = ({ darkMode, setDarkMode }) => {
                             candidate.status === "Selected"
                               ? "bg-success"
                               : candidate.status === "Pending"
-                                ? "bg-warning"
-                                : "bg-danger"
+                              ? "bg-warning"
+                              : "bg-danger"
                           }`}
                         >
                           {candidate.status}
@@ -275,7 +284,7 @@ const Candidates = ({ darkMode, setDarkMode }) => {
 
       </div>
 
-      {/* MODAL */}
+      {/* Modal */}
       <CandidateModal
         show={showModal}
         handleClose={handleClose}

@@ -105,7 +105,7 @@ const CandidateModal = ({
           </div>
           
 
-          /* Body */
+          {/* Body */}
           <div className="modal-body">
 
             <div className="row g-3">
