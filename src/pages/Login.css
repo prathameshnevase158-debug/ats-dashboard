@@ -1,29 +1,43 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+
 html,
 body,
 #root {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
-  overflow: hidden; /* remove unwanted scroll/space */
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 * {
   box-sizing: border-box;
 }
 
+/* =========================
+   LOGIN CONTAINER
+========================= */
+
 .login-container {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0 !important;
   padding: 0 !important;
 }
 
 .login-container .row {
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   margin: 0 !important;
 }
+
+/* =========================
+   LEFT BANNER
+========================= */
 
 .banner-section {
   background: linear-gradient(135deg, #0d6efd, #0056b3);
@@ -31,48 +45,82 @@ body,
   justify-content: center;
   align-items: center;
   color: white;
-  padding: 0;
+  padding: 20px;
 }
 
 .banner-content {
-  max-width: 400px;
+  max-width: 420px;
 }
 
 .banner-content h1 {
   font-size: 48px;
   font-weight: bold;
+  margin-bottom: 15px;
 }
 
 .banner-content p {
   font-size: 18px;
-  margin-top: 15px;
+  line-height: 1.6;
 }
+
+/* =========================
+   LOGIN CARD
+========================= */
 
 .login-card {
   width: 100%;
   max-width: 420px;
   background: white;
   padding: 40px;
-  border-radius: 12px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
+
+/* =========================
+   FORM
+========================= */
 
 .form-control {
   height: 45px;
+  border-radius: 10px;
 }
 
 .btn-primary {
   height: 45px;
   font-size: 16px;
   font-weight: 600;
+  border-radius: 10px;
 }
 
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
 @media (max-width: 768px) {
+
   .banner-section {
-    display: none; /* hide left section on mobile */
+    display: none;
+  }
+
+  .login-container {
+    padding: 20px 10px !important;
+  }
+
+  .login-container .row {
+    min-height: auto;
   }
 
   .login-card {
-    margin: 20px;
+    margin: 20px auto;
     padding: 25px;
+    width: 100%;
+  }
+
+  .banner-content h1 {
+    font-size: 36px;
+  }
+
+  .banner-content p {
+    font-size: 16px;
   }
 }
