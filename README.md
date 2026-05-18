@@ -95,19 +95,40 @@ npm start
 ![Login](./public/screenshots/Login.png)
 
 ### Dashboard
-![Dashboard](./public/screenshots/Dashboard.png)
+![Dashboard](./screenshots/Dashboard.png)
 
-### Candidates
-![Candidates](./public/screenshots/Candidates.png)
-
-### Add Jobs
-![Add Jobs](./public/screenshots/AddJobs.png)
-
-### Add Candidates
-![Add Candidates](./public/screenshots/AddCandidates.png)
+### Dashboard Dark Mode
+![Dashboard Dark Mode](./screenshots/DashboardDarkMode.png)
 
 ### Jobs
-![Jobs](./public/screenshots/Jobs.png)
+![Jobs](./screenshots/Jobs.png)
+
+### Jobs Dark Mode
+![Jobs Dark Mode](./screenshots/JobsDarkMode.png)
+
+### Candidates
+![Candidates](./screenshots/Candidates.png)
+
+### Candidate Dark Mode
+![Candidate Dark Mode](./screenshots/CandidateDarkMode.png)
+
+### Add Job
+![Add Job](./screenshots/AddJob.png)
+
+### Add Job Dark Mode
+![Add Job Dark Mode](./screenshots/AddJobDarkMode.png)
+
+### Add Candidate
+![Add Candidate](./screenshots/AddCandidate.png)
+
+### Add Candidate Dark Mode
+![Add Candidate Dark Mode](./screenshots/AddCandidateDarkMode.png)
+
+---
+
+## Live Demo
+
+https://ats-dashboard-jade.vercel.app
 
 ---
 
